@@ -1,0 +1,94 @@
+.main
+	padding-left 229px
+	
+
+.video
+	
+	&-wrapper
+		display block
+		width 100%
+		position relative
+		margin-bottom 10px
+		video
+			display block
+			width 100%
+	&-link
+		display block
+		position absolute
+		fullSize()
+		z-index 1
+		
+
+.homepage-category
+	display block
+	margin-bottom 10px
+	picture, img
+		display block
+	&:last-child
+		margin-bottom 0
+		
+.advantages
+	padding 40px 15px 15px
+	background-color $basic-white-color
+	border-bottom 1px solid $grey-bg
+	margin-bottom 80px
+	
+.advantage
+	padding 15px 0
+	border-top 1px solid $grey-bg
+	border-bottom 1px solid $grey-bg
+	&:last-child
+		padding-bottom 0
+		border-bottom none
+	&.is-active
+		.advantage__title
+			&:after
+				transform translateY(-50%) rotate(-45deg)
+				background-color $grey-bg
+	&__title
+		font-size 22px
+		position relative
+		padding-right 60px
+		&:after
+			pseudo()
+			position absolute
+			top 50%
+			right 0
+			transform translateY(-50%)
+			transition all .3s ease-in-out
+			width 40px
+			height 40px
+			border-radius 50%
+			background-position 50%
+			background-repeat no-repeat
+			background-image url('../img/icons/svg/plus.svg')
+			background-size 24px
+	&__text
+		display none
+		padding-top 20px
+		padding-bottom 10px
+		color #545454
+		p
+			margin-bottom 10px
+			&:last-child
+				margin-bottom 0
+				
+.categories-cards
+	white-space nowrap
+	overflow-x auto
+	padding 15px 10px
+	
+.category-card
+	display inline-block
+	vertical-align middle
+	text-align center
+	font-size 12px
+	color $text-color
+	margin-right 5px
+	text-transform uppercase
+	&__img
+		display block
+		margin 0 auto 10px auto
+		width 80px
+		height 80px
+		border-radius 50%

@@ -1,2 +1,79 @@
 .header
 	background-color $header-bg
+	&-infoline
+		background-color $color-bg
+		text-transform uppercase
+		padding 15px
+		font-size 13px
+		letter-spacing 1px
+		
+	&-content
+		position fixed
+		width 100%
+		z-index 99
+		padding-right 45px
+		padding-top 5px
+		pointer-events none
+
+
+.header-tools
+	padding-right 40px
+	&__item
+		display inline-block
+		width 20px
+		height 20px
+		margin-right 20px
+		&:last-child
+			margin-right 0
+		svg
+			svg()
+
+.cart-link
+	pointer-events auto
+	position relative
+	width 41px
+	height 48px
+	background-color rgba($basic-white-color, .3)
+	&:hover
+		background-color rgba($basic-white-color, 1)
+	svg
+		svg()
+		width 24px
+		position absolute
+		position-center()
+		
+	&__count
+		flex-col-center()
+		border-radius 50%
+		background-color $basic-black-color
+		color $basic-white-color
+		width 18px
+		height 18px
+		font-size 10px
+		position absolute
+		top 3px
+		right 3px
+		
+
+.search
+	pointer-events auto
+	display inline-flex
+	padding 10px
+	background-color rgba($basic-white-color, .3)
+	justify-content space-between
+	text-transform uppercase
+	font-weight 600
+	flex-wrap nowrap
+	position absolute
+	horisontal-center()
+	&-form
+		display flex
+		flex-wrap nowrap
+	
+	&-input
+		width 300px
+		display block
+		border-bottom 1px solid $basic-black-color
+		margin 0 10px
+		
+		

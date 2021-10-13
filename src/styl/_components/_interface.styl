@@ -1,0 +1,98 @@
+.currency
+	position fixed
+	left 20px
+	bottom 20px
+	z-index 99
+	display flex
+	flex-wrap nowrap
+	border-radius 3px
+	overflow hidden
+	border 1px solid #D6D6D6
+	font-size 15px
+	&-item
+		flex-col-center()
+		width 40px
+		height 34px
+		transition all .17s ease-in-out
+		background-color $basic-white-color
+		color #bbbbbb
+		text-align center
+		border-right 1px solid #D6D6D6
+		&:last-child
+			border-right none
+		&.is-active
+			color #666666
+			background-color $grey-bg
+		&:hover
+			cursor pointer
+			color #666666
+			
+.langs
+	position fixed
+	bottom 20px
+	right 20px
+	z-index 99
+	border 1px solid #ddd
+	border-radius 3px
+	background-color $basic-white-color
+	min-width 140px
+	color $text-color
+	&.is-active
+		.langs-arrow
+			transform rotate(-90deg)
+		.langs-list
+			display block
+			
+	&-list
+		display none
+		border-bottom 1px solid #ddd
+			
+		&__item
+			display flex
+			align-items center
+			justify-content flex-start
+			flex-wrap nowrap
+			padding 5px 10px
+			transition background-color .17s ease-in-out
+			&:hover
+				cursor pointer
+				background-color $grey-bg
+		
+	&-current
+		display flex
+		align-items center
+		justify-content flex-start
+		flex-wrap nowrap
+		padding 5px 10px
+		position relative
+		line-height 1
+		&:hover
+			cursor pointer
+			
+	&-arrow
+		display inline-block
+		width 16px
+		height 16px
+		position absolute
+		right 10px
+		top 50%
+		margin-top -8px
+		transition transform .17s ease-in-out
+		svg
+			svg()
+		
+		
+	&-text
+		font-size 15px
+		
+	&-flag
+		flex none
+		width 24px
+		height 24px
+		margin-right 10px
+		img
+			display block
+			width 100%
+			height 100%
+			border-radius 50%
+		

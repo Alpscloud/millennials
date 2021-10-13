@@ -10,19 +10,102 @@
 
 		<!-- Main -->
 		<main class="main">
-			<div class="content">
-				<ol>
-					<li>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Текст приставка взобравшись предупредила продолжил, путь заманивший скатился до правилами маленькая несколько, по всей бросил, всеми силуэт курсивных семь даль. Первую!</li>
-					<li>Подзаголовок страну которое предупредила путь над диких силуэт лучше живет букв то, использовало если своих ее lorem приставка послушавшись строчка толку свое дорогу образ переулка безопасную. Свое курсивных, приставка силуэт!</li>
-					<li>Заманивший меня ты продолжил вопрос своего океана. Переписывается скатился, они ведущими, заглавных семь моей. Всеми алфавит инициал все маленький подпоясал правилами пустился, пояс использовало, рыбного сих предупредила взгляд страну однажды.</li>
-					<li>Ipsum все коварных буквоград, путь страну, щеке его мир переписали страна составитель, раз вершину жаренные по всей семантика знаках. Грустный его переулка, большого, необходимыми своих буквоград собрал наш деревни маленькая о.</li>
-					<li>Дороге заглавных силуэт не журчит живет языкового. Грамматики маленькая несколько гор знаках океана, необходимыми она заманивший по всей одна, однажды ручеек своих запятых вскоре первую над мир пор безопасную города жизни.</li>
-					<li>Свою коварный рукопись силуэт пустился оксмокс лучше предложения, алфавит залетают буквоград агенство, вопроса запятой языкового подпоясал если, текстами подзаголовок. Свое, которой проектах правилами мир одна! Последний, имени, жизни. От всех, рекламных.</li>
-					<li>Одна агенство живет там ручеек своих журчит инициал щеке рекламных скатился первую ты подзаголовок дороге коварный страна он дал все алфавит, свой? Приставка инициал до, речью. Страна свой одна, себя.</li>
-					<li>Переулка курсивных даль однажды рекламных обеспечивает букв прямо за продолжил последний его предупредила, вскоре речью, назад он составитель живет одна! Алфавит взобравшись напоивший щеке на берегу! Бросил, путь, сбить! Взобравшись, вопроса.</li>
-					<li>Себя меня всемогущая языкового имени грустный семантика ему переписывается парадигматическая свой точках строчка диких продолжил она назад речью повстречался его на берегу несколько, своих, пор бросил, ipsum букв рыбного буквоград! Ручеек.</li>
-					<li>Деревни его большой подпоясал эта продолжил за страна образ буквенных, пояс путь, грустный то мир толку единственное рыбными если имеет. Страну текстами точках заголовок приставка рыбными сих до повстречался запятой.</li>
-				</ol>
+
+			<h1 class="w3c">Основной сео-заголовок страницы</h1>
+
+			{% include '../parts/components/nav.html' %}
+
+			<div class="page-content">
+
+				
+
+				<div class="hidden-desktop visible-tablet homepage-content">
+					
+					<nav class="categories-cards">
+						<a href="page-catalog.html" class="category-card">
+							<span class="category-card__img bg" style="background-image: url('img/cat.png');"></span>
+							<span class="category-card__title">Millennials</span>
+						</a>
+
+						<a href="page-catalog.html" class="category-card">
+							<span class="category-card__img bg" style="background-image: url('img/cat.png');"></span>
+							<span class="category-card__title">Все женские</span>
+						</a>
+
+						<a href="page-catalog.html" class="category-card">
+							<span class="category-card__img bg" style="background-image: url('img/cat.png');"></span>
+							<span class="category-card__title">Все мужское</span>
+						</a>
+
+						<a href="page-catalog.html" class="category-card">
+							<span class="category-card__img bg" style="background-image: url('img/cat.png');"></span>
+							<span class="category-card__title">Из кожи</span>
+						</a>
+					</nav>
+
+					<div class="video-wrapper">
+						<a href="https://millennialstm.com/promo" class="video-link">&nbsp;</a>
+						{% include '../parts/components/video.html' %}
+					</div>
+
+					<nav class="homepage-categories">
+						{% include '../parts/sections/homepage-categories.html' %}
+					</nav>
+
+					<div class="advantages">
+						<!-- Advantage -->
+						<div class="advantage">
+							<div class="advantage__title">
+								<p>ЛЕТНЯЯ РАСПРОДАЖА</p>
+							
+							</div>
+							<div class="advantage__text">
+								<p>до 75%</p>
+							</div>
+						</div>
+						<!-- //Advantage -->
+
+						<!-- Advantage -->
+						<div class="advantage">
+							<div class="advantage__title">
+								<p>Бесплатная доставка c примеркой</p>
+								
+								</span>
+							</div>
+							<div class="advantage__text">
+								<p>по России при покупке от 5 000 руб. По Москве уже на следующий день. Служба доставки - компания DPD</p>
+							</div>
+						</div>
+						<!-- //Advantage -->
+
+						<!-- Advantage -->
+						<div class="advantage">
+							<div class="advantage__title">
+								<p>Легкий возврат</p>
+						
+							</div>
+							<div class="advantage__text">
+								<p>Не подошел размер или изделие ? Быстро и легко заменим или вернем деньги</p>
+							</div>
+						</div>
+						<!-- //Advantage -->
+
+
+					</div>
+				</div>
+
+				<!-- MAIN SLIDER -->
+				<div class="promo-slider js-promo-slider hidden-tablet">
+					<div class="promo-slide">
+						{% include '../parts/components/promo-picture.html' %}
+					</div>
+					<!-- //slide -->
+					<div class="promo-slide">
+						{% include '../parts/components/promo-picture.html' %}
+					</div>
+					<!-- //slide -->
+				</div>
+				<!-- //MAIN SLIDER -->
 			</div>
 		</main>
 		<!-- //Main -->
