@@ -1,0 +1,40 @@
+{% include '../parts/head.html' %}
+<body>
+	
+	<!-- CONTENT WRAPPER -->
+	<div class="content__wrapper">
+
+		<!-- Header -->
+		{% include '../parts/sections/header.html' %}
+		<!-- //Header -->
+
+		<!-- Main -->
+		<main class="main">
+
+			<h1 class="w3c">Заголовок категории</h1>
+
+			{% include '../parts/components/nav-active.html' %}
+
+			<div class="page-content">
+
+				<div class="category-images">
+					{% include '../parts/sections/homepage-categories.html' %}
+				</div>
+				
+				
+			</div>
+		</main>
+		<!-- //Main -->
+
+		<!-- Footer -->
+		{% include '../parts/sections/footer.html' %}
+		<!-- //Footer -->
+
+	</div>
+	<!-- //CONTENT WRAPPER -->
+
+	{% include '../parts/scripts.html' %}
+
+</body>
+
+</html>

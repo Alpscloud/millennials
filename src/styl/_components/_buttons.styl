@@ -28,6 +28,33 @@
 		svg
 			svg()
 			fill-opacity .5
+		&:hover
+			svg
+				fill-opacity 1
+			
+	&-toggle
+		display inline-block	
+		width 30px
+		height 43px
+		position absolute	
+		top 0
+		right 0
+		z-index 	1
+		&:before,
+		&:after
+			width 10px
+			height 1px
+			background-color $basic-black-color
+			pseudo()
+			position absolute
+			position-center()
+			transition opacity .17s ease-in-out
+		&:before
+			height 10px
+			width 1px
+		&.is-active
+			&:before
+				opacity 0
 			
 	
 		

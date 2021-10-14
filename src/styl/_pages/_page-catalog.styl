@@ -1,0 +1,37 @@
+.catalog
+	margin-top -20px
+.product-card
+	display block
+	height 100%
+	color $text-color
+	&:hover
+		.product-card__title
+			text-decoration underline
+		img
+			opacity .75
+	&__wrapper
+		padding 20px
+	&__picture
+		display block
+		padding-top 150%
+		margin-bottom 20px
+	img
+		display block
+		transition opacity .75s ease-in-out
+		
+	&__title
+		text-transform uppercase
+		font-size 20px
+		margin-bottom 5px
+		
+	&__prices
+		color #a9a9a9
+		text-transform uppercase
+		font-size 20px
+
+.old-price
+	text-decoration line-through
+		
+.catalog__row
+	margin-left -20px
+	margin-right -20px

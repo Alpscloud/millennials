@@ -10,6 +10,7 @@
 	top 0
 	left 0
 	padding-top 48px
+	z-index 100
 	&-overlay
 		position absolute
 		top 0
@@ -33,17 +34,46 @@
 				background-color rgba($basic-white-color, 1)
 				
 		li
+			position relative	
+			background-color rgba($basic-white-color, .5)
 			&:last-child
 				margin-top 50px
-				
+			&.is-active
+				a
+					font-weight 700
+					
 			&.has-submenu-item
+				> a
+					padding-right 40px
 				&:hover
 					cursor pointer
+					
+			&.last-item
+				background-color transparent
+				span
+					display inline-block
+					padding-right 23px
+				.btn-toggle
+					width 20px
+					height 17px
+					top 2px
+					
+				.sub-menu
+					padding-right 0
+					
+
+			&.is-current
+				
+						
+				.sub-menu
+					display block
 			
 
 .sub-menu
 	padding-top 10px
 	display none
+	padding-right 10px
+	padding-bottom 10px
 	a
 		font-weight normal
 		padding 0
@@ -55,6 +85,9 @@
 	li
 		margin-bottom 7px
 		display block
+		background-color transparent
 		&:last-child
+			margin-bottom 0
 			margin-top 0
+			
 		

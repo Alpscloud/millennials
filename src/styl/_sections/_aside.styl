@@ -1,0 +1,108 @@
+.filter
+	position fixed
+	top 0
+	right 0
+	height 100vh
+	overflow-y auto
+	background-color $basic-white-color
+	z-index 101
+	width 260px
+	transition all .17s ease-in-out
+	box-shadow 0 0 5px 5px rgba($basic-black-color, .1)
+	opacity 0
+	transform translateX(102%)
+	padding-bottom 70px
+	&.is-opened
+		opacity 1
+		transform translateX(0)
+	&-entering
+		display flex
+		align-items center
+		justify-content space-between
+		flex-wrap nowrap
+		padding 20px
+		border-bottom 1px solid $grey-bg
+		
+		.btn-close
+			position relative
+			top auto
+			right auto
+			display inline-block
+			
+	&-title
+		font-size 20px
+		font-weight 700
+		
+	&-params
+		padding 20px
+		border-bottom 1px solid $grey-bg
+		&__title
+			text-transform uppercase
+			font-size 15px
+			font-weight 700
+			margin-bottom 10px
+			color #333
+			
+		&__labels
+			height 145px
+			overflow hidden
+			
+	&-param
+		
+		&__label
+			display block
+			margin-bottom 10px
+			text-transform uppercase
+			font-size 12px
+			transition color .17s ease-in-out
+			&:hover
+				cursor pointer
+				color $basic-black-color
+			&:last-child
+				margin-bottom 0
+			input
+				display none
+				&:checked + span:after
+					opacity 1
+				
+		&__value
+			display inline-block
+			position relative
+			white-space nowrap
+			&:after
+				content "✓"
+				font-size 14px
+				display inline-block
+				vertical-align middle
+				margin-left 4px
+				top -2px
+				position relative
+				opacity 0
+				transition opacity .17s ease-in-out
+				
+
+.btn-toggle-params
+	display block
+	width 100%
+	text-align center
+	text-decoration underline
+	font-size 16px
+	height 20px
+	&:hover
+		text-decoration none
+		
+	&.is-hidden
+		display none
+		
+
+.btn-filter
+	display inline-block
+	position fixed
+	top 21px
+	right 95px
+	z-index 100
+	text-transform uppercase
+	font-size 15px
+	font-weight 700
+	&:hover
+		opacity .65

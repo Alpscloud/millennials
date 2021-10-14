@@ -111,19 +111,45 @@
 	
 
 .content
+	color #808080
+	font-size 20px
+	max-width 1000px
+	font-family 'Verdana', Arial, sans-serif
 	*
 		&:last-child
 			margin-bottom 0
 			
-	h2,h3,h3,h4,h5,h6
+	h1
+		font-size 24px
+		color $basic-black-color
+		margin-bottom 40px
+			
+	h1,h2,h3,h3,h4,h5,h6
 		line-height 1
-		font-family $Bold
+		font-weight 700
+		text-transform uppercase
+		
+	h2
+		font-size 22px
+		margin-bottom 20px
+		
+	h3
+		font-size 22px
+		margin-bottom 20px
+		text-transform none
 		
 	strong, b
-		font-family $Bold
+		font-weight 700
+		font-style bold
 		
-
+	p
+		margin-bottom 20px
+		
+	p + ul,
+	p + ol
+		margin-top -10px
 	ul, ol
+		margin-bottom 30px
 		li
 			display block
 			position relative
@@ -132,6 +158,13 @@
 			&:last-child
 				margin-bottom 0
 				
+	img
+		height auto
+		width auto
+		max-width 240px
+		display inline-block
+		vertical-align middle
+				
 	ul
 		li
 			&:before
@@ -139,8 +172,9 @@
 				width 4px
 				height 4px
 				border-radius 50%
-				margin-right 4px
+				margin-right 6px
 				background-color $text-color
+				vertical-align middle
 				
 	ol
 		counter-reset list
@@ -150,6 +184,15 @@
 				content counter(list) ". "
 				display inline-block
 				margin-right 4px
+				vertical-align middle
+				
+	a
+		color inherit
+		text-decoration underline
+		&:hover
+			text-decoration none
+				
+
 
 
 .hidden-desktop
