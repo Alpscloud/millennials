@@ -31,4 +31,115 @@
 		flex 1
 		margin-left 30px
 		
+
+.my-orders__empty
+	background-color #efefef
+	border 1px solid $grey-bg
+	border-left 2px solid #bbb
+	padding 20px 30px
+	a
+		color inherit
+		text-decoration underline
+		&:hover
+			text-decoration none
+
+.my-order
+	margin-bottom 20px
+	border 1px solid $grey-bg
+	&.is-canceled
+		.my-order__information
+			&:before
+				background-color $status-default
 		
+	&.is-complete
+		.my-order__information
+			&:before
+				background-color $status-complete
+				
+	&.is-error
+		.my-order__information
+			&:before
+				background-color $status-error
+					
+	&.is-active
+		.my-order__arrow
+			transform rotate(-180deg)
+		.my-order__information
+			background-color #f5f5f5
+	&__information
+		display flex
+		flex-wrap nowrap
+		justify-content space-between
+		padding 16px 1px 16px 16px
+		transition all .17s ease-in-out
+		position relative
+		&:before
+			pseudo()
+			position absolute
+			left 16px
+			top 16px
+			bottom 16px
+			width 8px
+			border-radius 50px
+			background-color transparent
+		
+		&:hover
+			background-color #f5f5f5
+			cursor pointer
+	&__label
+		color $light-text-color
+		font-size 14px
+		display block
+		margin-bottom 3px
+		
+	&__price
+		width 20%
+		white-space nowrap
+	&__status
+		position relative
+		padding-left 24px
+		width 40%
+		
+		
+	
+				
+	&__goods
+		width 40%
+		display flex
+		justify-content flex-end
+		align-items center
+		flex-wrap nowrap
+		&-imgs
+			display flex
+			flex-wrap nowrap
+			margin-right 10px
+			img
+				display block
+				width 40px
+				height 40px
+				object-fit cover
+				margin-right 10px
+				&:last-child
+					margin-right 0
+					
+	&__arrow
+		display inline-block
+		width 20px
+		height 20px
+		transition all .17s ease-in-out
+		svg
+			svg()
+				
+	&:last-child
+		margin-bottom 0
+		
+
+.my-order
+	&__details
+		padding 16px
+		display none
+		
+		.btn
+			margin-top 20px
+		
+

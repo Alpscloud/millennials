@@ -366,6 +366,49 @@
 			width 100%
 			margin-right 0
 			margin-bottom 10px
+			
+	// Cabinet order
+	.my-order
+		&__information
+			flex-wrap wrap
+			&:before
+				left 10px
+		&__status,
+		&__price,
+		&__goods
+			width 100%
+			
+			
+		&__status
+			padding-left 15px
+			margin-bottom 5px
+			
+		&__price
+			margin-bottom 5px
+			
+		&__goods
+			justify-content flex-start
+			&-imgs
+				flex 1
+				
+		&__arrow
+			position absolute
+			top 16px
+			right 16px
+			top 30px
+			
+	.technical-block
+		font-size 14px
+		line-height 19px
+		
+		&__btns
+			display flex
+			flex-wrap wrap
+			.btn
+				width 100%
+				margin-bottom 5px
+				&:last-child
+					margin-bottom 0
 
 
 +max-screen(600px)

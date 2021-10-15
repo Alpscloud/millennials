@@ -1,0 +1,46 @@
+{% include '../parts/head.html' %}
+<body class="page-inner">
+	
+	<!-- CONTENT WRAPPER -->
+	<div class="content__wrapper">
+
+		<!-- Header -->
+		{% include '../parts/sections/header.html' %}
+		<!-- //Header -->
+
+		<!-- Main -->
+		<main class="main  page-technical">
+
+			{% include '../parts/components/nav.html' %}
+
+			<div class="page-content">
+
+
+				<div class="technical-block text-center">
+					<h1 class="technical-block__title block-404__title">404</h1>
+					<p>Извините, по вашему запросу ничего не найдено. <br>Пожалуйста, проверьте правильно ли введен адрес страницы.</p>
+
+					<div class="technical-block__btns">
+						<a href="page-catalog.html" class="btn btn-lg">Перейти в каталог</a>
+						<a href="index.html" class="btn btn-invisible btn-lg">На главную</a>
+					</div>
+				</div>
+
+			</div>
+
+
+		</main>
+		<!-- //Main -->
+
+		<!-- Footer -->
+		{% include '../parts/sections/footer.html' %}
+		<!-- //Footer -->
+
+	</div>
+	<!-- //CONTENT WRAPPER -->
+
+	{% include '../parts/scripts.html' %}
+
+</body>
+
+</html>
