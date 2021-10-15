@@ -17,7 +17,6 @@
 
 
 .header-tools
-	padding-right 40px
 	&__item
 		display inline-block
 		width 20px
@@ -27,6 +26,9 @@
 			margin-right 0
 		svg
 			svg()
+		
+.hidden-ic
+	display none
 
 .cart-link
 	pointer-events auto
@@ -34,6 +36,8 @@
 	width 41px
 	height 48px
 	background-color rgba($basic-white-color, .3)
+	display inline-block
+	margin-right 10px
 	&:hover
 		background-color rgba($basic-white-color, 1)
 	svg
@@ -53,6 +57,23 @@
 		position absolute
 		top 3px
 		right 3px
+		
+.login-link
+	width 41px
+	height 48px
+	display inline-block
+	background-color rgba($basic-white-color, .3)
+	pointer-events auto
+	position relative
+	
+	svg
+		svg()
+		width 24px
+		position absolute
+		position-center()
+		
+	&:hover
+		background-color rgba($basic-white-color, 1)
 		
 
 .search

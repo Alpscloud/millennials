@@ -129,10 +129,72 @@ $(document).ready(function() {
 
 	$('.js-promo-slider').slick({
 		arrows: false,
+		infinite: true,
 		dots: false,
 		autoplay: true,
 		autoplaySpeed: 6000
 	});
 
+
+	function initProductSlider() {
+
+		$('.js-product-slider').slick({
+			arrows: false,
+			dots: true,
+			autoplay: false,
+			infinite: true
+		});
+
+	}
+
+	if(html < 1100) {
+		initProductSlider();
+	} 
+
+
+	$('.js-another-products-slider').slick({
+		arrows: false,
+		dots: true,
+		autoplay: false,
+		slidesToShow: 5,
+		centerMode: false,
+		responsive: [
+			{
+				breakpoint: 1600,
+				settings: {
+					slidesToShow: 4
+				}
+			},
+			{
+				breakpoint: 1400,
+				settings: {
+					slidesToShow: 3
+				}
+			},
+			{
+				breakpoint: 767,
+				settings: {
+					slidesToShow: 2
+				}
+			},
+			{
+				breakpoint: 500,
+				settings: {
+					slidesToShow: 1
+				}
+			}
+		]
+	});
+
+	$('[data-fancybox]').fancybox({
+		gallery: true,
+		loop: true,
+		buttons: ['close', 'zoom']
+	})
+
+	$('.product-imgs, .product-information__content').theiaStickySidebar({
+		'additionalMarginTop': 100,
+		'disableOn': false
+	});
 
 });

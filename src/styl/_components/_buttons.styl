@@ -1,22 +1,27 @@
 .btn
 	display inline-block
-	padding 12px 15px
-	font 1em $Reg
+	padding 10px 15px
+	font 14px $Reg
+	font-weight 700
+	text-transform uppercase
 	line-height 1
 	text-align center
-	color $text-color
-	border 2px solid transparent
+	color $basic-white-color
+	background-color $basic-black-color
 	transition all .17s ease-in-out
 	backface-visibility hidden
+	border 1px solid $basic-black-color
+	&:hover
+		background-color $basic-white-color
+		color $basic-black-color
+	&-wide
+		display block
+		width 100%
+		padding-left 10px
+		padding-right 10px
+		
 	
-	&-accent
-		background-color $accent-color
-		
-	&-transparent
-		background-color transparent
-		
-	&-dark
-		background-color $basic-black-color
+	
 		
 	&-close
 		display none

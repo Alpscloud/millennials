@@ -197,17 +197,27 @@
 		
 	.cart-link
 		background-color transparent
-		position absolute
-		right 10px
-		vertical-center()
+		
 		width 20px
 		height 20px
+		margin-right 20px
 		&__count
 			font-size 8px
 			width 14px
 			height 14px
 			top -5px
 			right -5px
+			
+	.login-link
+		background-color transparent
+		width 20px
+		height 20px
+		
+	.header-content__row
+		flex-wrap nowrap
+		
+	.header-tools
+		margin-left 15px
 			
 	.content
 		font-size 14px
@@ -254,6 +264,45 @@
 		.page-content
 			padding-left 10px
 			padding-right 10px
+			
+	.hidden-ic
+		display inline-block
+		
+	// Product
+	.product
+		flex-wrap wrap
+		margin-top -40px
+		
+		&-imgs
+			width calc(100% + 20px)
+			margin-bottom 20px
+			margin-left -10px
+			margin-right -10px
+		&-information
+			width 100%
+			padding-left 0
+			
+			&__content
+				max-width 100%
+				padding-top 0
+				
+		&-size
+			width 25%
+			
+		&-img
+			position relative
+			padding-top 150%
+			overflow hidden
+			
+			&:before
+				bottom 10px
+				left 10px
+			img, picture
+				position absolute
+				position-center()
+				width 100%
+				height 100%
+				object-fit cover
 		
 
 +max-screen(700px)
@@ -264,9 +313,28 @@
 	.catalog__row
 		margin-left -3px
 		margin-right -3px		
+		
+	.product-size
+		width 33.33333%
+		
+	.sect__another-products
+		padding-top 70px
+		
++max-screen(500px)
+	.another-products
+		margin-left -5px
+		.slick-slide
+			padding 0 5px
+		
+		.slick-dots
+			margin-top 30px
+		
 +max-screen(420px)
 	.logo__col
 		.logo
 			margin-left 5px
 			img
 				max-width 160px
+				
+	.product-size
+		width 50%

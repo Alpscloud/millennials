@@ -76,26 +76,13 @@
 			</div>
 			<!-- //Search -->
 			
-			<!-- cart link -->
-			<a href="page-cart.html" class="cart-link">
-				<span class="cart-link__ic">
-					<svg enable-background="new 0 0 50 50"  version="1.1" viewBox="0 0 50 50" width="50px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-						<path d="M8,14L4,49h42l-4-35H8z" fill="none" stroke="#000000" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
-						<rect fill="none" height="50" width="50"/>
-						<path d="M34,19c0-1.241,0-6.759,0-8  c0-4.971-4.029-9-9-9s-9,4.029-9,9c0,1.241,0,6.759,0,8" fill="none" stroke="#000000" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
-						<circle cx="34" cy="19" r="2"/>
-						<circle cx="16" cy="19" r="2"/>
-					</svg>
-				</span>
-				<span class="cart-link__count">99</span>
-			</a>
-			<!-- //cart link -->
+			
 
 
-			<div class="header-tools hidden-desktop visible-tablet">
+			<div class="header-tools ">
 				<div class="row align-vertical-center row-nowrap">
 					<!-- inst -->
-					<a href="#" class="header-tools__item" target="_blank" rel="nofollow">
+					<a href="#" class="header-tools__item hidden-ic" target="_blank" rel="nofollow">
 
 						<svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 56.7 56.7" enable-background="new 0 0 56.7 56.7" xml:space="preserve">
 							<g>
@@ -113,10 +100,38 @@
 					<!-- //inst -->
 
 					<!-- Toggle search -->
-					<button type="button" class="header-tools__item js-open-search-btn">
+					<button type="button" class="header-tools__item js-open-search-btn hidden-ic">
 						<svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M29.71,28.29l-6.5-6.5-.07,0a12,12,0,1,0-1.39,1.39s0,.05,0,.07l6.5,6.5a1,1,0,0,0,1.42,0A1,1,0,0,0,29.71,28.29ZM14,24A10,10,0,1,1,24,14,10,10,0,0,1,14,24Z"/></svg>
 					</button>
 					<!-- //Toggle search -->
+
+					<!-- cart link -->
+					<a href="page-cart.html" class="cart-link" aria-label="Перейти в корзину">
+						<span class="cart-link__ic">
+							<svg enable-background="new 0 0 50 50"  version="1.1" viewBox="0 0 50 50" width="50px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+								<path d="M8,14L4,49h42l-4-35H8z" fill="none" stroke="#000000" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+								<rect fill="none" height="50" width="50"/>
+								<path d="M34,19c0-1.241,0-6.759,0-8  c0-4.971-4.029-9-9-9s-9,4.029-9,9c0,1.241,0,6.759,0,8" fill="none" stroke="#000000" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+								<circle cx="34" cy="19" r="2"/>
+								<circle cx="16" cy="19" r="2"/>
+							</svg>
+						</span>
+						<span class="cart-link__count">99</span>
+					</a>
+					<!-- //cart link -->
+
+					<!-- Login link -->
+					<a href="page-cabinet.html" class="login-link" aria-label="Перейти в личный кабинет">
+						<svg enable-background="new 0 0 32 32" version="1.1" viewBox="0 0 32 32" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+							<g>
+								<polyline fill="none" points="649,137.999 675,137.999 675,155.999 661,155.999  " stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
+								<polyline fill="none" points="653,155.999 649,155.999 649,141.999  " stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
+								<polyline fill="none" points="661,156 653,162 653,156" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
+							</g>
+							<path d="M21.947,16.332C23.219,14.915,24,13.049,24,11c0-4.411-3.589-8-8-8s-8,3.589-8,8s3.589,8,8,8  c1.555,0,3.003-0.453,4.233-1.224c4.35,1.639,7.345,5.62,7.726,10.224H4.042c0.259-3.099,1.713-5.989,4.078-8.051  c0.417-0.363,0.46-0.994,0.097-1.411c-0.362-0.416-0.994-0.46-1.411-0.097C3.751,21.103,2,24.951,2,29c0,0.553,0.448,1,1,1h26  c0.553,0,1-0.447,1-1C30,23.514,26.82,18.615,21.947,16.332z M10,11c0-3.309,2.691-6,6-6s6,2.691,6,6s-2.691,6-6,6S10,14.309,10,11z  "/>
+						</svg>
+					</a>
+					<!-- //Login link -->
 				</div>
 			</div>
 		</div>
@@ -163,12 +178,12 @@
 
 				<ul class="sub-menu">
 					<li><a href="page-catalog.html">Вся продукция</a></li>
-					<li><a href="page-contacts.html">Толстовки и худи</a></li>
-					<li><a href="page-contacts.html">Деним</a></li>
-					<li><a href="page-contacts.html">Брюки</a></li>
-					<li><a href="page-contacts.html">Поло и рубашки</a></li>
-					<li><a href="page-contacts.html">Футболки</a></li>
-					<li><a href="page-contacts.html">Из кожи</a></li>
+					<li><a href="page-catalog.html">Толстовки и худи</a></li>
+					<li><a href="page-catalog.html">Деним</a></li>
+					<li><a href="page-catalog.html">Брюки</a></li>
+					<li><a href="page-catalog.html">Поло и рубашки</a></li>
+					<li><a href="page-catalog.html">Футболки</a></li>
+					<li><a href="page-catalog.html">Из кожи</a></li>
 				</ul>
 			</li>
 			<li class="has-submenu-item last-item">
