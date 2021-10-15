@@ -1,0 +1,223 @@
+.cart
+	max-width 1200px
+
+.cart-block
+	margin-bottom 40px
+	&__title
+		font-weight 500
+		font-size 18px
+		margin-bottom 20px
+		position relative
+		padding-left 30px
+		&:before
+			content attr(data-cart-step)
+			flex-col-center()
+			width 20px
+			height 20px
+			border-radius 50%
+			background-color $basic-black-color
+			position absolute
+			vertical-center()
+			left 0
+			text-align center
+			color $basic-white-color
+			font-size 14px
+			font-weight 700
+	&:last-child
+		margin-bottom 0
+		
+	&__content
+		border 1px solid $grey-bg
+		padding 20px
+
+
+
+.cart-product
+	display flex
+	position relative
+	align-items flex-start
+	flex-wrap nowrap
+	padding-bottom 20px
+	margin-bottom 20px
+	border-bottom 1px solid $grey-bg
+	&:last-child
+		padding-bottom 0
+		margin-bottom 0
+		border-bottom none
+	&__information
+		flex 1
+	&__img
+		flex none
+		display block
+		width 180px
+		margin-right 20px
+		&:hover
+			opacity .85
+		img
+			width 100%
+			display block
+			
+	&__total-price
+		font-size 20px
+		font-weight 700
+			
+	&__title
+		text-transform uppercase
+		font-weight 600
+		margin-bottom 5px
+		padding-right 30px
+		a
+			color $text-color
+			&:hover
+				opacity .5
+				
+	&__params
+		color $light-text-color
+		margin-bottom 20px
+
+.params-list	
+	li
+		margin-bottom 7px
+		display flex
+		align-items flex-end
+		flex-wrap nowrap
+		&:last-child
+			margin-bottom 0
+			
+		b
+			color $text-color
+			text-align right
+			
+		
+			
+	.divider
+		flex 1
+		margin-left 5px
+		margin-right 5px
+	
+				
+
+.methods
+	display flex
+	flex-wrap wrap
+	justify-content flex-start
+	margin-bottom -30px
+	
+.choice
+	&-item
+		margin-bottom 30px
+	&-label
+		display block
+		input
+			display none
+			&:checked + span
+				background-color #f5f5f5
+				border-color $grey-bg
+				&:hover
+					img
+						filter none
+					svg
+						fill $basic-black-color
+					span
+						color $light-text-color
+						&.choice-label__title
+							color $basic-black-color
+			
+		&__block
+			flex-col-center()
+			width 100%
+			border 2px solid $grey-bg
+			color $light-text-color
+			font-size 14px
+			min-height 100px
+			background-color $basic-white-color
+			box-shadow 0px 7px 14px 2px rgba($basic-black-color, .11)
+			transition all .17s ease-in-out
+			span
+				display block
+				transition color .17s ease-in-out
+
+			&:hover
+				background-color $basic-black-color
+				color $basic-white-color
+				border-color $basic-black-color
+				cursor pointer
+				svg
+					fill $basic-white-color
+				span
+					color $basic-white-color
+					
+				img
+					filter brightness(0) invert(1)
+					
+		&__ic
+			display block
+			width 30px
+			height 30px
+			margin-bottom 5px
+			svg
+				svg()
+				fill $basic-black-color
+			img
+				display block
+				transition filter .17s ease-in-out
+		&__title
+			text-transform uppercase
+			color $basic-black-color
+			display block
+			font-weight 700
+			
+			
+
+.promocode
+	display flex
+	align-items flex-end
+	justify-content flex-start
+	flex-wrap nowrap
+	margin-bottom 30px
+	max-width 500px
+	&__label
+		color $light-text-color
+		padding-bottom 4px
+		
+	&-fields
+		display flex
+		align-items flex-end
+		justify-content flex-start
+		
+		
+	&__input
+		margin 0 15px
+		
+.delivery-inputs
+	display none
+	
+.cart-order-info
+	&__list
+		
+		margin-bottom 30px
+		color $light-text-color
+		b
+			color $basic-black-color
+			
+		&--item
+			display flex
+			align-items flex-end
+			justify-content space-between
+			margin-bottom 10px
+			&:last-child
+				margin-bottom 0
+				
+.divider
+	flex 1
+	display block
+	border-bottom 1px dotted $grey-bg
+	margin-left 10px
+	margin-right 10px
+	
+.cart-total
+	margin-bottom 30px
+	font-size 20px
+	span, b
+		font-size 24px
+		font-weight 700

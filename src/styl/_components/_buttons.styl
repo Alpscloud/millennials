@@ -11,14 +11,37 @@
 	transition all .17s ease-in-out
 	backface-visibility hidden
 	border 1px solid $basic-black-color
+	&:disabled,
+	&.is-disabled
+		background-color #f5f5f5
+		border-color $grey-bg
+		color rgba($light-text-color, .5)
+		pointer-events none
 	&:hover
 		background-color $basic-white-color
 		color $basic-black-color
+		
+	&-lg
+		padding 20px 60px
 	&-wide
 		display block
 		width 100%
 		padding-left 10px
 		padding-right 10px
+		
+	&-delete
+		display inline-block
+		width 24px
+		height 24px
+		position absolute
+		right 0
+		top 0
+		svg
+			svg()
+			fill $light-text-color
+		&:hover
+			svg
+				fill $basic-black-color
 		
 	
 	

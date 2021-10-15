@@ -1,8 +1,10 @@
 {% include '../parts/head.html' %}
-<body>
+<body class="page-inner">
 	
 	<!-- CONTENT WRAPPER -->
 	<div class="content__wrapper">
+
+
 
 		<!-- Header -->
 		{% include '../parts/sections/header.html' %}
@@ -11,102 +13,344 @@
 		<!-- Main -->
 		<main class="main">
 
-			<h1 class="w3c">Основной сео-заголовок страницы</h1>
+
 
 			{% include '../parts/components/nav.html' %}
 
 			<div class="page-content">
 
-				
+				<form class="cart">
 
-				<div class="hidden-desktop visible-tablet homepage-content">
-					
-					<nav class="categories-cards">
-						<a href="page-catalog.html" class="category-card">
-							<span class="category-card__img bg" style="background-image: url('img/cat.png');"></span>
-							<span class="category-card__title">Millennials</span>
-						</a>
+					<div class="page-entering">
+						<div class="row align-vertical-center align-horisontal-between row-nowrap">
+							<h1 class="sect-title">Оформление заказа</h1>
 
-						<a href="page-catalog.html" class="category-card">
-							<span class="category-card__img bg" style="background-image: url('img/cat.png');"></span>
-							<span class="category-card__title">Все женские</span>
-						</a>
-
-						<a href="page-catalog.html" class="category-card">
-							<span class="category-card__img bg" style="background-image: url('img/cat.png');"></span>
-							<span class="category-card__title">Все мужское</span>
-						</a>
-
-						<a href="page-catalog.html" class="category-card">
-							<span class="category-card__img bg" style="background-image: url('img/cat.png');"></span>
-							<span class="category-card__title">Из кожи</span>
-						</a>
-					</nav>
-
-					<div class="video-wrapper">
-						<a href="https://millennialstm.com/promo" class="video-link">&nbsp;</a>
-						{% include '../parts/components/video.html' %}
+							<a href="index.html" class="link link-prev">Вернуться к покупкам</a>
+						</div>
 					</div>
 
-					<nav class="homepage-categories">
-						{% include '../parts/sections/homepage-categories.html' %}
-					</nav>
+					<!-- Products -->
+					<div class="cart-block">
+						<h2 class="cart-block__title" data-cart-step="1">Товары:</h2>
 
-					<div class="advantages">
-						<!-- Advantage -->
-						<div class="advantage">
-							<div class="advantage__title">
-								<p>ЛЕТНЯЯ РАСПРОДАЖА</p>
+						<div class="cart-block__content">
+							<div class="cart-products">
+								<!-- Product -->
+								<div class="cart-product">
+									<a href="page-product.html" class="cart-product__img">
+										<img src="img/product-mini.jpg" alt="">
+									</a>
+									<div class="cart-product__information">
+										<h3 class="cart-product__title">
+											<a href="page-product.html">Джемпер плотной вязки</a>
+										</h3>
+										<p class="product-articul">LK4Z55-T2</p>
+
+										<div class="cart-product__information--details">
+											<div class="cart-product__params">
+
+												<ul class="params-list">
+													<li><span>Размер:</span> <span class="divider"></span> <b>XL</b></li>
+													<li><span>Цвет:</span> <span class="divider"></span> <b>светло-бежевый</b></li>
+													<li><span>Цена:</span> <span class="divider"></span> <b>2 499 Р.</b></li>
+												</ul>
+											</div>
+
+											<div class="cart-product__quantity row row-nowrap align-vertical-center align-horisontal-between">
+												<div class="product-quantity">
+													<button type="button" class="product-quantity__btn minus js-quantity-btn" data-action="minus">-</button>
+													<input type="number" class="product-quantity__input js-quantity-input"  min="1" placeholder="0" name="quantity" value="1">
+													<button type="button" class="product-quantity__btn plus js-quantity-btn" data-action="plus">+</button>
+												</div>
+
+												<p class="cart-product__total-price">5 000 RUB</p>
+											</div>
+										</div>
+									</div>
+
+									<!-- Delete -->
+									<button class="btn-delete" type="button" aria-labe="Удалить товар из корзины">
+										<svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" >
+											<path d="M22.387 2.701h-6.19C15.45 1.094 13.83 0 12 0c-1.832 0-3.453 1.094-4.198 2.701H1.613a1 1 0 1 0 0 2.002h.611v.003L3.26 22.058C3.325 23.147 4.199 24 5.25 24H18.752c1.046 0 1.919-.851 1.988-1.942l1.036-17.352v-.003h.61a1 1 0 1 0 .001-2.002zM12 2.002c.676 0 1.299.267 1.772.699h-3.545A2.63 2.63 0 0 1 12 2.002zm6.75 19.995l-13.492-.059L4.229 4.703h15.542L18.75 21.997z"></path>
+											<path d="M8.202 20.325c.019 0 .038 0 .058-.002a1 1 0 0 0 .943-1.056L8.535 7.339a.997.997 0 0 0-1.055-.944 1 1 0 0 0-.943 1.055l.667 11.929a1 1 0 0 0 .998.946zM15.739 20.323c.019.002.038.002.057.002.527 0 .97-.412.999-.946l.666-11.929a1.002 1.002 0 0 0-.943-1.056c-.539-.041-1.024.392-1.055.944l-.667 11.929a1 1 0 0 0 .943 1.056zM12 20.325c.553 0 1.001-.449 1.001-1.001V7.394a1 1 0 1 0-2.002 0v11.931a1 1 0 0 0 1.001 1z"></path>
+										</svg>
+									</button>
+									<!-- //Delete -->
+								</div>
+								<!-- //Product -->
+
+								<!-- Product -->
+								<div class="cart-product">
+									<a href="page-product.html" class="cart-product__img">
+										<img src="img/product-mini.jpg" alt="">
+									</a>
+									<div class="cart-product__information">
+										<h3 class="cart-product__title">
+											<a href="page-product.html">Джемпер плотной вязки</a>
+										</h3>
+										<p class="product-articul">LK4Z55-T2</p>
+
+										<div class="cart-product__information--details">
+											<div class="cart-product__params">
+												<ul class="params-list">
+													<li><span>Размер:</span> <span class="divider"></span> <b>XL</b></li>
+													<li><span>Цвет:</span> <span class="divider"></span> <b>светло-бежевый</b></li>
+													<li><span>Цена:</span> <span class="divider"></span> <b>2 499 Р.</b></li>
+												</ul>
+											</div>
+
+											<div class="cart-product__quantity row row-nowrap align-vertical-center align-horisontal-between">
+												<div class="product-quantity">
+													<button type="button" class="product-quantity__btn minus js-quantity-btn" data-action="minus">-</button>
+													<input type="number" class="product-quantity__input js-quantity-input"  min="1" placeholder="0" name="quantity" value="1">
+													<button type="button" class="product-quantity__btn plus js-quantity-btn" data-action="plus">+</button>
+												</div>
+
+												<p class="cart-product__total-price">5 000 RUB</p>
+											</div>
+										</div>
+									</div>
+
+									<!-- Delete -->
+									<button class="btn-delete" type="button" aria-labe="Удалить товар из корзины">
+										<svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" >
+											<path d="M22.387 2.701h-6.19C15.45 1.094 13.83 0 12 0c-1.832 0-3.453 1.094-4.198 2.701H1.613a1 1 0 1 0 0 2.002h.611v.003L3.26 22.058C3.325 23.147 4.199 24 5.25 24H18.752c1.046 0 1.919-.851 1.988-1.942l1.036-17.352v-.003h.61a1 1 0 1 0 .001-2.002zM12 2.002c.676 0 1.299.267 1.772.699h-3.545A2.63 2.63 0 0 1 12 2.002zm6.75 19.995l-13.492-.059L4.229 4.703h15.542L18.75 21.997z"></path>
+											<path d="M8.202 20.325c.019 0 .038 0 .058-.002a1 1 0 0 0 .943-1.056L8.535 7.339a.997.997 0 0 0-1.055-.944 1 1 0 0 0-.943 1.055l.667 11.929a1 1 0 0 0 .998.946zM15.739 20.323c.019.002.038.002.057.002.527 0 .97-.412.999-.946l.666-11.929a1.002 1.002 0 0 0-.943-1.056c-.539-.041-1.024.392-1.055.944l-.667 11.929a1 1 0 0 0 .943 1.056zM12 20.325c.553 0 1.001-.449 1.001-1.001V7.394a1 1 0 1 0-2.002 0v11.931a1 1 0 0 0 1.001 1z"></path>
+										</svg>
+									</button>
+									<!-- //Delete -->
+								</div>
+								<!-- //Product -->
+							</div>
+						</div>
+					</div>
+					<!-- //Products -->
+
+					<!-- Delivery -->
+					<div class="cart-block">
+						<h2 class="cart-block__title" data-cart-step="2">Способ доставки:</h2>
+
+						<div class="cart-block__content">
 							
-							</div>
-							<div class="advantage__text">
-								<p>до 75%</p>
+							<div class="methods row-gutters">
+								<div class="choice-item col-gutters col-w-33">
+									<label class="choice-label text-center " >
+										<input type="radio" name="delivery" value="Самовывоз" data-delivery-method="pickup" class="js-delivery-method-radio">
+										<span class="choice-label__block">
+											<span class="choice-label__title">Самовывоз</span>
+											<span class="choice-label__notice">Из шоурума или точки выдачи</span>
+										</span>
+										
+									</label>
+								</div>
+
+								<div class="choice-item col-gutters col-w-33">
+									<label class="choice-label text-center" >
+										<input type="radio" name="delivery" value="Курьерская служба" data-delivery-method="courier" class="js-delivery-method-radio">
+										<span class="choice-label__block">
+											<span class="choice-label__title">Курьерская служба</span>
+											<span class="choice-label__notice">Новая почта, Мисто</span>
+										</span>
+									</label>
+								</div>
 							</div>
 						</div>
-						<!-- //Advantage -->
+					</div>
+					<!-- //Delivery -->
 
-						<!-- Advantage -->
-						<div class="advantage">
-							<div class="advantage__title">
-								<p>Бесплатная доставка c примеркой</p>
+					<!-- Contacts -->
+					<div class="cart-block">
+						<h2 class="cart-block__title" data-cart-step="3">Контактные данные:</h2>
+
+						<div class="cart-block__content">
+							<div class="row align-horisontal-start form-groups__row row-gutters">
+								<div class="form-group col-w-50 col-gutters">
+									<label class="form-label">
+										<span>Ваше имя:</span>
+										<input type="text" name="имя" class="form-input js-required-input" >
+									</label>
+								</div>
+
+								<div class="form-group col-w-50 col-gutters">
+									<label class="form-label">
+										<span>Ваш телефон:</span>
+										<input type="tel" name="телефон" class="form-input js-required-input" >
+									</label>
+								</div>
+
+								<div class="form-group col-w-100 col-gutters">
+									<label class="form-label">
+										<span>Ваш e-mail:</span>
+										<input type="email" name="email" class="form-input js-required-input" >
+									</label>
+								</div>
+
+								<div class="form-group col-w-100 col-gutters delivery-inputs">
+									<div class="row align-horisontal-start form-groups__row row-gutters">
+										<div class="form-group col-w-50 col-gutters">
+											<label class="form-label">
+												<span>Город:</span>
+												<input type="text" name="Город" class="form-input" >
+											</label>
+										</div>
+
+										<div class="form-group col-w-50 col-gutters">
+											<label class="form-label">
+												<span>Улица:</span>
+												<input type="text" name="Улица" class="form-input" >
+											</label>
+										</div>
+
+										<div class="form-group col-w-33 col-gutters">
+											<label class="form-label">
+												<span>Дом:</span>
+												<input type="text" name="Дом" class="form-input" >
+											</label>
+										</div>
+
+										<div class="form-group col-w-33 col-gutters">
+											<label class="form-label">
+												<span>Корпус:</span>
+												<input type="text" name="Корпус" class="form-input" >
+											</label>
+										</div>
+
+										<div class="form-group col-w-33 col-gutters">
+											<label class="form-label">
+												<span>Строение:</span>
+												<input type="text" name="Строение" class="form-input" >
+											</label>
+										</div>
+
+										<div class="form-group col-w-33 col-gutters">
+											<label class="form-label">
+												<span>Подъезд:</span>
+												<input type="text" name="Подъезд" class="form-input" >
+											</label>
+										</div>
+
+										<div class="form-group col-w-33 col-gutters">
+											<label class="form-label">
+												<span>Этаж:</span>
+												<input type="text" name="Этаж" class="form-input" >
+											</label>
+										</div>
+
+										<div class="form-group col-w-33 col-gutters">
+											<label class="form-label">
+												<span>Квартира:</span>
+												<input type="text" name="Квартира" class="form-input" >
+											</label>
+										</div>
+									</div>
+								</div>
+
 								
-								</span>
-							</div>
-							<div class="advantage__text">
-								<p>по России при покупке от 5 000 руб. По Москве уже на следующий день. Служба доставки - компания DPD</p>
 							</div>
 						</div>
-						<!-- //Advantage -->
+					</div>
+					<!-- //Contacts -->
 
-						<!-- Advantage -->
-						<div class="advantage">
-							<div class="advantage__title">
-								<p>Легкий возврат</p>
-						
+					<!-- payment -->
+					<div class="cart-block">
+						<h2 class="cart-block__title" data-cart-step="4">Методы оплаты:</h2>
+
+						<div class="cart-block__content">
+							<div class="promocode">
+								<p class="promocode__label">Промокод:</p>
+								<div class="promocode-fields">
+									<input type="text" class="promocode__input form-input" placeholder="Введите промокод">
+									<button class="btn" disabled type="button">Применить</button>
+								</div>
 							</div>
-							<div class="advantage__text">
-								<p>Не подошел размер или изделие ? Быстро и легко заменим или вернем деньги</p>
+							<div class="methods row-gutters">
+								<div class="choice-item col-gutters col-w-33">
+									<label class="choice-label text-center">
+										<input type="radio" name="payment" value="Наличными">
+										<span class="choice-label__block">
+											<span class="choice-label__ic">
+												<img src="img/icons/svg/cash.svg" alt="">
+											</span>
+											<span class="choice-label__title">Наличными</span>
+										</span>
+										
+									</label>
+								</div>
+
+								<div class="choice-item col-gutters col-w-33">
+									<label class="choice-label text-center">
+										<input type="radio" name="payment" value="Картой при получении">
+										<span class="choice-label__block">
+											<span class="choice-label__ic">
+												<img src="img/icons/svg/terminal.svg" alt="">
+											</span>
+											<span class="choice-label__title">Картой при получении</span>
+										</span>
+									</label>
+								</div>
+
+								<div class="choice-item col-gutters col-w-33">
+									<label class="choice-label text-center">
+										<input type="radio" name="payment" value="Онлайн оплата">
+										<span class="choice-label__block">
+											<span class="choice-label__ic">
+												<img src="img/icons/svg/internet.svg" alt="">
+											</span>
+											<span class="choice-label__title">Онлайн оплата</span>
+										</span>
+									</label>
+								</div>
 							</div>
 						</div>
-						<!-- //Advantage -->
+					</div>
+					<!-- //payment -->
+
+					<!-- Total -->
+					<div class="cart-block">
+						<h2 class="cart-block__title" data-cart-step="5">Ваш заказ:</h2>
+
+						<div class="cart-block__content">
+							<div class="cart-order-info">
+								<div class="cart-order-info__list">
+									<ul class="params-list">
 
 
-					</div>
-				</div>
+										<li>
+											<span>Товары:</span>
+											<span class="divider"></span> 
+											<b>Бежевый джемпер, синие штаны</b>
+										</li>
+										<li >
+											<span>Товаров на сумму:</span> 
+											<span class="divider"></span>
+											<b>10 200 RUB</b>
+										</li>
+										<li >
+											<span>Способ доставки:</span> 
+											<span class="divider"></span>
+											<b>Курьерская служба</b>
+										</li>
+										<li >
+											<span>Стоимость доставки:</span>
+											<span class="divider"></span> 
+											<b>800 RUB</b>
+										</li>
+									</ul>
+								</div>
 
-				<!-- MAIN SLIDER -->
-				<div class="promo-slider js-promo-slider hidden-tablet">
-					<div class="promo-slide">
-						{% include '../parts/components/promo-picture.html' %}
+								<p class="cart-total">Итого: <span>11 000 RUB</span></p>
+
+								<button class="btn btn-wide" type="button">Оформить</button>
+							</div>
+						</div>
 					</div>
-					<!-- //slide -->
-					<div class="promo-slide">
-						{% include '../parts/components/promo-picture.html' %}
-					</div>
-					<!-- //slide -->
-				</div>
-				<!-- //MAIN SLIDER -->
+					<!-- //Total -->
+				</form>
+				
 			</div>
+
+			
+
 		</main>
 		<!-- //Main -->
 

@@ -1,0 +1,66 @@
+{% include '../parts/head.html' %}
+<body class="page-inner">
+	
+	<!-- CONTENT WRAPPER -->
+	<div class="content__wrapper">
+
+
+
+		<!-- Header -->
+		{% include '../parts/sections/header.html' %}
+		<!-- //Header -->
+
+		<!-- Main -->
+		<main class="main">
+
+
+
+			{% include '../parts/components/nav.html' %}
+
+			<div class="page-content">
+
+				<section class="cabinet">
+					<div class="page-entering">
+						<div class="row align-vertical-center align-horisontal-between row-nowrap">
+							<h1 class="sect-title">Личный кабинет</h1>
+
+							<a href="index.html" class="link link-prev">Вернуться на главную</a>
+						</div>
+					</div>
+
+					<div class="row align-vertical-start align-horisontal-start cabinet__row">
+
+						<aside class="cabinet-nav">
+							<ul>
+								<li><a href="page-cabinet.html" class="cabinet-nav__link">Мои данные</a></li>
+								<li><span class="cabinet-nav__link is-active">Мои заказы</span></li>
+							</ul>
+						</aside>
+
+						<div class="cabinet-content">
+							<h2 class="sect-title sect-title-sm">Мои заказы</h2>
+
+						
+						</div>
+					</div>
+				</section>
+				
+			</div>
+
+			
+
+		</main>
+		<!-- //Main -->
+
+		<!-- Footer -->
+		{% include '../parts/sections/footer.html' %}
+		<!-- //Footer -->
+
+	</div>
+	<!-- //CONTENT WRAPPER -->
+
+	{% include '../parts/scripts.html' %}
+
+</body>
+
+</html>

@@ -102,6 +102,58 @@ $(document).ready(function() {
 	});
 
 
+	// quantity
+	$('.product-quantity').on('click', function(event) {
+		var input = $(this).find('.js-quantity-input'),
+			value = input.val(),
+			target = $(event.target);
+		
+		if(target.attr('data-action') === 'plus') {
+			value++;
+			
+			input.val(value);
+		
+
+		} else if(target.attr('data-action') === 'minus') {	
+			if(input.val() <= 1) {return};
+			value--;	
+			
+			input.val(value);
+			
+		}
+
+	});
+
+
+	$('.promocode__input').on('keyup', function() {
+		var value = $(this).val();
+
+		if(value.length > 3) {
+			$('.promocode').find('.btn').prop('disabled', '');
+			$('.promocode').find('.btn').removeClass('is-disabled');
+		} else {
+			$('.promocode').find('.btn').prop('disabled', true);
+			$('.promocode').find('.btn').addClass('is-disabled');
+		}
+	});
+
+
+	$('.js-delivery-method-radio').on('change', function() {
+		var deliveryRadios = $('.js-delivery-method-radio:checked');
+
+		if (deliveryRadios.attr('data-delivery-method') == 'courier') {
+			$('.delivery-inputs').stop().slideDown(300);
+		} else {
+			$('.delivery-inputs').stop().slideUp(300);
+
+			$('.delivery-inputs input').each(function() {
+				$(this).val('');
+			});
+		}
+	});
+
+
+
 
 
 	if (html < 1100) {
@@ -196,5 +248,7 @@ $(document).ready(function() {
 		'additionalMarginTop': 100,
 		'disableOn': false
 	});
+
+	$("input[type=tel]").inputmask({"mask": "+7 (999) 999-9999","clearIncomplete": false});
 
 });
