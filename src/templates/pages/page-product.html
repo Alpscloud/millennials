@@ -62,7 +62,7 @@
 							<div class="product-sizes">
 								<div class="product-size">
 									<label class="product-size__label">
-										<input type="radio" name="size" value="S (RUS 46)">
+										<input type="radio" name="size" value="S (RUS 46)" >
 										<span>S (RUS 46)</span>
 									</label>
 								</div>
@@ -105,8 +105,8 @@
 							<!-- //Sizes -->
 
 							<div class="product-btns">
-								<a class="btn btn-wide" href="#">Заказать</a>
-								<a class="btn btn-wide" href="#">Добавить в корзину</a>
+								<button type="button" class="btn btn-wide js-open-order-popup-btn" type="button">Заказать</button>
+								<a class="btn btn-wide js-add-product-btn" href="#">Добавить в корзину</a>
 							</div>
 						</div>
 					</div>
@@ -159,6 +159,9 @@
 		<!-- Footer -->
 		{% include '../parts/sections/footer.html' %}
 		<!-- //Footer -->
+
+
+		{% include '../parts/components/popup-product.html' %}
 
 	</div>
 	<!-- //CONTENT WRAPPER -->
