@@ -301,15 +301,9 @@ $(document).ready(function() {
 		centerMode: false,
 		responsive: [
 			{
-				breakpoint: 1600,
+				breakpoint: 1200,
 				settings: {
 					slidesToShow: 4
-				}
-			},
-			{
-				breakpoint: 1400,
-				settings: {
-					slidesToShow: 3
 				}
 			},
 			{
